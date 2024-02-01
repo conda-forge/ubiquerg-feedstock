@@ -1,5 +1,5 @@
 {% set name = "ubiquerg" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 025509c4ec77a5cde8e8be66dabfef2ca6e3cd99da3cb15066c66a6f2bc3b9b5
+  sha256: b873ff87651e500fb32ac24a7850abe6261fde65c4c07bf6e0b5f14e32cd9387
 
 build:
   number: 0
