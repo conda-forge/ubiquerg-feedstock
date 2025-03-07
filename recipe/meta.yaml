@@ -1,13 +1,13 @@
 {% set name = "ubiquerg" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dd8e817c736e45c563bbf9e0d9b252e2a0456729c5644203376a447ffc7e04f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 942544eb0f881244dc170a244f9094dee7f727eaa59b548157c71bfc8ce24a6a
 
 build:
   number: 0
