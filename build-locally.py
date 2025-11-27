@@ -10,7 +10,6 @@ import glob
 import os
 import platform
 import subprocess
-import sys
 from argparse import ArgumentParser
 
 

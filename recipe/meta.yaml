@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3dd8e817c736e45c563bbf9e0d9b252e2a0456729c5644203376a447ffc7e04f
 
 build:
@@ -17,11 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
+
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ubiquerg
 
