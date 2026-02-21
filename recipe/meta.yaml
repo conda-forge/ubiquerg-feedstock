@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - hatchling
+    - python {{ python_min }}
   run:
-    - python >=3.6
-    - veracitools
+    - python >={{ python_min }}
 
 test:
   imports:
