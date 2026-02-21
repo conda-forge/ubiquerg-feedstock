@@ -18,9 +18,9 @@ requirements:
   host:
     - pip
     - hatchling
-    - python {{ python_min }}
+    - python >=3.10
   run:
-    - python >={{ python_min }}
+    - python >=3.10
 
 test:
   imports:
